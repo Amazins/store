@@ -51,7 +51,7 @@ const setupSite = (data) => {
     data.forEach(doc => {
         const item = doc.data();
         const li = `
-        <div onclick="location.href='https://amazins.github.io/store/products/?product=${item.sku}&hash=${hashStringer}&trkId=${trkString}';" title="Buy ${item.name}">
+        <div onclick="location.href='https://amazins.github.io/store/products?product=${item.sku}&hash=${hashStringer}&trkId=${trkString}';" title="Buy ${item.name}">
             <div class="slot">
                 <div class="banner">
                     <img class="banner-img" src="${item.image}">
