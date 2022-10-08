@@ -4,7 +4,7 @@ body{
   
   span{
       cursor: pointer;
-      color: #A39F3A;
+      color: #F2E941;
   }
     
   #app-mount {
@@ -103,7 +103,7 @@ body{
     user-select: none;
     flex-direction: column;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 2px;
     font-weight: 500;
     cursor: pointer;
   }
@@ -125,7 +125,7 @@ body{
     -moz-box-flex: 1;
     flex-grow: 1;
     background-color: black;
-    color: #F2E941;
+    color: white;
   }
   
   .bot-desc {

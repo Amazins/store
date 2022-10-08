@@ -59,7 +59,7 @@ const setupSite = (data) => {
                 <div class="bot-descriptors">
                     <div class="bot-desc">
                         <div class="bot-name">${item.name}</div>
-                        <div class="bot-owner">${item.desc}</div>
+                        <div class="bot-owner">${item.desc}<br>Color: ${item.color}</div>
                         <div class="owner-descriptors">
                             <div>
                                 <p id="bot-id">$${item.price}</p>
