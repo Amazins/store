@@ -46,7 +46,7 @@ if(item, rand, player != null){
                 <p></p>
             </div>
             <div style="background-color:white;">${pepo.table}</div>
-            <button onclick="location.href='https://amazins.github.io/store/purchase?item=${pepo.sku}';" style="background-color: yellow; border: none; width: 100%; height: 32px; cursor: pointer;" title="Buy ${pepo.name}">Buy ${pepo.name}</button>`
+            <button onclick="location.href='https://amazins.github.io/store/purchase?item=${pepo.sku}&page=1&trkId=${player}';" style="background-color: yellow; border: none; width: 100%; height: 32px; cursor: pointer;" title="Buy ${pepo.name}">Buy ${pepo.name}</button>`
         })
     })
 } else{
