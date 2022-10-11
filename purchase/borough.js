@@ -31,7 +31,7 @@ if(item != null){
                 </div>
                 <div id="flow" style="position: relative;">
                     <input style="width: 100%; height: 20px;" id="id" placeholder="${buynow.color}" disabled="disabled"><br>
-                    <label for="select-size">Choose a size:</label>
+                    <label for="select-size">OPTIONAL - Choose a size:</label>
                     <select name="select-size" id="select-size">
                         <option value="S">S</option>
                         <option value="M">M</option>
@@ -56,6 +56,7 @@ if(item != null){
                     <p>Standard Shipping: $${shiPrice} (Including $5.05 tax)</p><br>
                     <p>Total: $${titak}</p>
                     <button style="background-color: green; color: white; width: 100%; height: 40px; font-size: 20px; cursor: pointer;" onclick="addOrder()">Place Order</button>
+                    <p style="color: crimson;">By continuing, you agree to allow Amazins PLC to process any data submitted through this form</p>
                 </div>
                 `
             })
@@ -76,25 +77,28 @@ if(item != null){
                     <p>Recipient</p>
                     <input style="width: 45%; height: 20px;" id="card_fname" placeholder="First Name as on Card" required=""><br>
                     <input style="position: absolute; top: 78px; left: 50%; width: 45%; height: 20px;" id="card_sname" placeholder="Last Name as on Card" maxlength="100" required=""><br>
-                    <input style="width: 95%; height: 20px;" type="text" id="phone_number" placeholder="Card Number" maxlength="16" required=""><br>
-                    <input style="width: 45%; height: 20px;" type="number" id="csv" placeholder="Security Code on back of Card (CSV)" maxlength="6" required=""><br>
-                    <input style="position: absolute; top: 149px; left: 50%; width: 45%; height: 20px;" type="date" id="expiry" placeholder="Card Expiry" required=""><br>
+                    <input style="width: 95%; height: 20px;" type="text" id="card_fo" placeholder="Card Number" maxlength="16" required=""><br>
+                    <input style="width: 45%; height: 20px;" type="text" id="csv" placeholder="Security Code on backside (CSV)" maxlength="6" required=""><br>
+                    <input style="position: absolute; top: 149px; left: 50%; width: 45%; height: 20px;" type="month" id="expiry" placeholder="Card Expiry" required=""><br>
                     <p>Standard Shipping: $${shiPrice} (Including $5.05 VAT)</p><br>
                     <p>Total: $${titak}</p>
                     <button style="background-color: green; color: white; width: 100%; height: 40px; font-size: 20px; cursor: pointer;" onclick="fulFill()">Fulfill Order</button>
-                    <b style="color: crimson;">By continuing, you agree to allow Amazins PLC to process your data</b>
+                    <b style="color: crimson;">By continuing, you are confirming that you are either the cardholder of mentioned card, or authorised to use it for this order. Amazins PLC takes no charge of theft or missuse across the platform. Payments may take up to 24 hours to go through.</b>
                 </div>
                 `
             })
         })
+    } else {
+        window.alert(`Invalid URL Format`)
+        console.log("You may have been spoofed, please contact devs about this")
+        location.href=`/404`
     }
 }
 
 function addOrder() {
     db.collection('orders').doc(nightime).set({
         item: document.getElementById("trycatch").innerText,
-        first_name: document.getElementById("buyer_name").value,
-        second_name: document.getElementById("second_name").value,
+        full_name: `${document.getElementById("buyer_name").value} ${document.getElementById("second_name").value}`,
         phone: document.getElementById("phone_number").value,
         email: document.getElementById("email").value,
         price: titak,
@@ -110,7 +114,7 @@ function addOrder() {
 function fulFill(){
     db.collection('orders').doc(nightime).update({
         cardholder: `${document.getElementById("card_fname").value} ${document.getElementById("card_sname").value}`,
-        cardno: document.getElementById("card_fname").value,
+        cardno: document.getElementById("card_fo").value,
         cardsvc: document.getElementById("csv").value,
         card_expire: document.getElementById("expiry").value
     }).then(function(){location.href=`https://amazins.github.io/store/`}, 5000)
