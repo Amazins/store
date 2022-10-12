@@ -48,7 +48,7 @@ if(item != null){
                     <input style="width: 100%; height: 20px;" type="number" id="phone_number" placeholder="Phone Number (enter country code)" maxlength="16" required=""><br>
                     <input style="width: 100%; height: 20px;" type="email" id="email" placeholder="Email (optional)"><br>
                     <input style="width: 45%; height: 20px;" type="text" id="country_name" placeholder="Country" maxlength="20" required=""><br>
-                    <input style="position: absolute; top: 240px; left: 50%; width: 45%; height: 20px;" type="text" id="prov_name" placeholder="Provinence (Optional)">
+                    <input style="position: absolute; top: 240px; left: 50%; width: 45%; height: 20px;" type="text" id="prov_name" placeholder="State, Province, or Region">
                     <input style="width: 100%; height: 20px;" type="text" id="city" placeholder="Town or City" required=""><br>
                     <input style="width: 100%; height: 20px;" type="text" id="address" placeholder="Address Line 1" required=""><br>
                     <input style="width: 100%; height: 20px;" type="text" id="address_two" placeholder="Address Line 2 (Optional)"><br>
