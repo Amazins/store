@@ -1,5 +1,6 @@
 const container = document.querySelector('.gridz');
 document.title = `Store | Amazin`
+window.alert('BLACK FRIDAY SALE NOW ON!\nUP TO 40% DISCOUNT SELECT ITEMS ONLY!')
 
 const firebaseConfig = {
     apiKey: "AIzaSyCImQ1forKpA4QqYDUBdgnHrWuRrDoe5JE",
