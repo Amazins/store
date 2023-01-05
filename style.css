@@ -191,4 +191,79 @@ body{
     height:300px;
   }
 
+/* Init Bumper Fender Section */
+  .css-1kc958e {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 1344px;
+    padding-inline: 0px;
+    margin-top: 20px;
+    display: block;
+    overflow: scroll;
+}
+
+.css-v2q4y5 > :not(style) ~ :not(style) {
+    margin-top: 0;
+    margin-inline-end: 0;
+    margin-bottom: 0;
+    margin-inline-start: 0.5rem;
+}
+
+.css-v2q4y5 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    flex-direction: row;
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+    padding: 10px;
+}
+
+.css-1gh8nrn {
+    padding: 20px;
+}
+
+.css-1gh8nrn a {
+    text-decoration: none;
+}
+
+.css-1gh8nrn > :not(style) ~ :not(style) {
+    margin-top: 2px;
+    margin-inline-end: 0;
+    margin-bottom: 0;
+    margin-inline-start: 0;
+}
+
+.css-1w6z3vp {
+    font-size: 30px;
+    font-weight: 600;
+    color: aquamarine;
+    cursor: default;
+}
+
+.css-eqlxeo {
+    color: cyan;
+    text-decoration: none;
+}
+
+.css-eqlxeo:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+.css-12i7rr {
+    color: white;
+    font-weight: 300px;
+}
+
+underline {
+    text-decoration: underline;
+}
+
   
