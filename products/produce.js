@@ -41,7 +41,7 @@ if(item, rand, player != null){
                     </ul>
                 </div>
                 <div id="descriptionz" style="color: white;">
-                    <p id="basic">${pepo.desc}<br>Color: ${pepo.color}<br>Price: $${pepo.price} ($${pepo.ship} Shipping)<br>Logo: ${pepo.merch}</p>
+                    <p id="basic">${pepo.desc}<br>Color: ${pepo.color}<br>Price: $${pepo.price} ($${pepo.ship} Shipping)<br>Sponsor: ${pepo.merch}</p>
                     <button onclick="location.href='https://amazins.github.io/store/purchase?item=${pepo.sku}&page=1&trkId=${player}';" style="background-color: #F2E941; height: 39px; border: none; width: 98.6%; height: 24px; cursor: pointer;">Buy ${pepo.name}</button><br>
                     <p>Advanced Description:<br>${pepo.advanced}</p>
                     <p></p>
@@ -69,7 +69,7 @@ if(item, rand, player != null){
                     </ul>
                 </div>
                 <div id="descriptionz" style="color: white;">
-                    <p id="basic">${pepo.desc}<br>Color: ${pepo.color}<br>Price: $${pepo.price} ($${shiPrice} Shipping)<br>Logo: ${pepo.merch}</p>
+                    <p id="basic">${pepo.desc}<br>Color: ${pepo.color}<br>Price: $${pepo.price} ($${shiPrice} Shipping)<br>Sponsor: ${pepo.merch}</p>
                     <button onclick="location.href='https://amazins.github.io/store/purchase?item=${pepo.sku}&page=1&trkId=${player}';" style="background-color: #F2E941; height: 39px; border: none; width: 98.6%; height: 24px; cursor: pointer;">Buy ${pepo.name}</button><br>
                     <p>Advanced Description:<br>${pepo.advanced}</p>
                     <p></p>
