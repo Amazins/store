@@ -243,17 +243,17 @@ body{
 .css-1w6z3vp {
     font-size: 30px;
     font-weight: 600;
-    color: aquamarine;
+    color: #faf368d7;
     cursor: default;
 }
 
 .css-eqlxeo {
-    color: cyan;
+    color: #faf368d7;
     text-decoration: none;
 }
 
-.css-eqlxeo:hover {
-    color: aquamarine;
+.css-eqlxeo:hover, .css-1w6z3vp:hover {
+    color: #f5eb2b;
     text-decoration: underline;
 }
 
