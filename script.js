@@ -1,5 +1,5 @@
 const container = document.querySelector('.gridz');
-document.title = `Store | Amazin`
+document.title = `Store | Amazins`
 
 const firebaseConfig = {
     apiKey: "AIzaSyCImQ1forKpA4QqYDUBdgnHrWuRrDoe5JE",
